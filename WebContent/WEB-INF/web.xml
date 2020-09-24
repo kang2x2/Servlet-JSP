@@ -22,6 +22,7 @@
   version="4.0"
   metadata-complete="false">
   
+  <!-- 서블릿방식 -->
   <!-- servlet 2.x -->
 <!--   <servlet>
   		<servlet-name>kang2x2</servlet-name>
@@ -32,6 +33,16 @@
   		<servlet-name>kang2x2</servlet-name>
   		<url-pattern>/kang2x2</url-pattern>
   </servlet-mapping> -->
+  
+    <!-- 서블릿방식 -->
+<!--   <filter>
+		<filter-name>characterIncodingFilter</filter-name>
+		<filter-class>com.newlecture.web.filter.CharacterEncodingFilter</filter-class>
+  </filter>
+    	<filter-mapping>
+    		<filter-name>characterIncodingFilter</filter-name>
+    		<url-pattern>/*</url-pattern>
+    	</filter-mapping> -->
   
   <display-name>Welcome to Tomcat</display-name>
   <description>

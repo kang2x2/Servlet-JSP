@@ -13,8 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 public class PostI  extends HttpServlet {
 		@Override
 		protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			response.setCharacterEncoding("UTF-8"); /* 한글 출력 인코딩 */
-			response.setContentType("text/html; charset=UTF-8");/* 한글 출력 인코딩 */
+			response.setCharacterEncoding("UTF-8"); /* 출력 값 한글 출력 인코딩 */
+			response.setContentType("text/html; charset=UTF-8");/* 출력 값 한글 출력 인코딩 */
+			/* request.setCharacterEncoding("UTF-8"); *//* 입력값 한글 출력 인코딩 */
 			PrintWriter out = response.getWriter();
 			
 			String title = request.getParameter("title");/* temp라는 String형 변수를 만들어 파라미터로 title저장 */
